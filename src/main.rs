@@ -4,13 +4,10 @@ use serde_json::{Value, json};
 use std::fs;
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
-    //let schema: Value =
-        //reqwest::blocking::get("http://hl7.org/fhir/r4/fhir.schema.json")?.json()?;
-
-    let schema = json!({"$ref": "http://hl7.org/fhir/r5/fhir.schema.json"});
+    let schema: Value =
+        reqwest::blocking::get("http://hl7.org/fhir/r4/fhir.schema.json")?.json()?;
 
     let compiled = JSONSchema::options()
-        .with_draft(Draft::Draft6)
         .compile(&schema)
         .expect("A valid schema");
 
