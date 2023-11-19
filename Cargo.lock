@@ -21,6 +21,7 @@ checksum = "f26201604c87b1e01bd3d98f8d5d9a8fcbb815e8cedb41ffccbeb4bf593a35fe"
 name = "affhirm"
 version = "0.1.0"
 dependencies = [
+ "clap",
  "jsonschema",
  "reqwest",
  "serde_json",
@@ -192,9 +193,9 @@ checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
 name = "clap"
-version = "4.4.7"
+version = "4.4.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ac495e00dcec98c83465d5ad66c5c4fabd652fd6686e7c6269b117e729a6f17b"
+checksum = "2275f18819641850fa26c89acc84d465c1bf91ce57bc2748b28c420473352f64"
 dependencies = [
  "clap_builder",
  "clap_derive",
@@ -202,9 +203,9 @@ dependencies = [
 
 [[package]]
 name = "clap_builder"
-version = "4.4.7"
+version = "4.4.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c77ed9a32a62e6ca27175d00d29d05ca32e396ea1eb5fb01d8256b669cec7663"
+checksum = "07cdf1b148b25c1e1f7a42225e30a0d99a615cd4637eae7365548dd4529b95bc"
 dependencies = [
  "anstream",
  "anstyle",
@@ -564,7 +565,7 @@ dependencies = [
 [[package]]
 name = "jsonschema"
 version = "0.17.1"
-source = "git+https://github.com/whytheplatypus/jsonschema-rs.git?branch=whytheplatypus/oneOfDiscriminator#24430f9b2ab0d824002f1d504994cb6ad564376f"
+source = "git+https://github.com/whytheplatypus/jsonschema-rs.git?branch=whytheplatypus/oneOfDiscriminator#ea2dc34493c48db49fdac5e20cc32d3b2be016ab"
 dependencies = [
  "ahash",
  "anyhow",

@@ -112,7 +112,7 @@
       "name": [ {
         "use": "official",
         "family": "Murphy561",
-        "given": "Luci727" ,
+        "given": [ "Luci727" ],
         "prefix": [ "Mrs." ]
       }, {
         "use": "maiden",
